@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Strong Locks West</title>
+<body>
+	  	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Strong Locks Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"> Contact Strong Locks <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Find a Strong Lock Lopper</a></li>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</body>
+<h1>Strong Locks West Menu</h1>
+<div class="container">
+		<div class="row">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Lock Washes
+        </div>
+        <div class="panel-body">
+    	<div class="col-sm-5">Basic Wash: $5</div>
+		<div class="col-sm-7"><input type="number" id="myNumber1" value="0" color="0000FF"></div>
+		<div class="col-sm-5">Degreaser: $9</div>
+		<div class="col-sm-7"><input type="number" id="myNumber2" value="0" color="0000FF"></div>
+        </div>
+        <div class="panel-footer">
+         <button onclick="washFunction()">Calc the Cost of Your Wash</button>
+        <p>Cost of your Wash: <span id="wash"></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+          Lock Clips, Cuts and Buzzes
+        </div>
+        <div class="panel-body">
+    <ul>
+    	<div class="col-sm-5">Basic Clip: $10</div>
+		<div class="col-sm-7"><input type="number" id="myNumber3" value="0" color="0000FF"></div>
+		<div class="col-sm-5">Major Cut: $20</div>
+		<div class="col-sm-7"><input type="number" id="myNumber4" value="0" color="0000FF"></div>
+        <div class="col-sm-5">Buzz Cut: $5</div>
+		<div class="col-sm-7"><input type="number" id="myNumber5" value="0" color="0000FF"></div>
+		<div class="col-sm-5">Combo Buzz/Clip: $15</div>
+		<div class="col-sm-7"><input type="number" id="myNumber6" Value="0" color="0000FF"></div>
+        <div class="col-sm-5">Combo Chrome Dome Polish: $7.50</div>
+		<div class="col-sm-7"><input type="number" id="myNumber7" value="0" color="0000FF"></div>
+        </div>
+        <div class="panel-footer">
+         <button onclick="clipFunction()">Calc the Cost of Your Clip</button>
+        
+        <p>Cost of your Clip: <span id="clip"></span></p>
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="panel-footer">
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="container">
+            <div class="row">
+              <button onclick="sumFunction()">Calc the Cost of Your Wash/Clip</button>
+        
+        <p>Cost of your Clip: <span id="washclip"></span></p>
+
+              <div class="col-sm-7">Coupon Value:</div>
+              <div class="col-sm-7"><input type="number" id="myNumber8" value="Null" color="0000FF"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+        <button onclick="myFunction()">Calc the Cost of Your Clip/Wash</button>
+        <p>Cost of your Clip: <span id="demo"></span></p>
+
+        <div style="tex-align:center">
+        <ul class="nav nav-pills">
+            <li><a href="https://www.getrefm.com/connect-with-and-contact-refm-page-3"><span class="glyphicon glyphicon-envelope"></span>Contact Us</a></li>
+            <li><a href="https://www.getrefm.com/academic-verification-page-7"<span class="glyphicon glyphicon-user"></span>Academic Verification</a></li>
+            <li><a href="https://www.getrefm.com/referrer_signup"<span class="glyphicon glyphicon-eye-close"></span>Become an Affiliate Marketer</a></li>
+            <a href="http://google.com" class="btn btn-primary btn-lg" target="_blank">Google It!</a>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <p class="text-rigth"><a href="#">Follow us</p>
+      </div>
+    </div>
+<script>
+function sumFunction() {
+	var a = document.getElementById("myNumber1").value;
+    // document.getElementById("myNumber1").innerHTML = a;
+	var b = document.getElementById("myNumber2").value;
+    // document.getElementById("myNumber2").innerHTML = b;
+    var c = document.getElementById("myNumber3").value;
+    // document.getElementById("myNumber1").innerHTML = a;
+	var d = document.getElementById("myNumber4").value;
+    // document.getElementById("myNumber2").innerHTML = b;
+    var e = document.getElementById("myNumber5").value;
+    // document.getElementById("myNumber1").innerHTML = a;
+	var f = document.getElementById("myNumber6").value;
+    // document.getElementById("myNumber2").innerHTML = b;
+    var g = document.getElementById("myNumber7").value;
+    // document.getElementById("myNumber2").innerHTML = b;
+    var sum = ((parseInt(a)*5) + (parseInt(b)*9) + (parseInt(c)*10) + (parseInt(d)*20) + (parseInt(e)*5) + (parseInt(f)*15) + (parseInt(g)*7.5));
+    document.getElementById("washclip").innerHTML = sum.toFixed(2);
+}
+
+function myFunction() {
+	var a = document.getElementById("myNumber1").value;
+    // document.getElementById("myNumber1").innerHTML = a;
+	var b = document.getElementById("myNumber2").value;
+    // document.getElementById("myNumber2").innerHTML = b;
+    var c = document.getElementById("myNumber3").value;
+    // document.getElementById("myNumber1").innerHTML = a;
+	var d = document.getElementById("myNumber4").value;
+    // document.getElementById("myNumber2").innerHTML = b;
+    var e = document.getElementById("myNumber5").value;
+    // document.getElementById("myNumber1").innerHTML = a;
+	var f = document.getElementById("myNumber6").value;
+    // document.getElementById("myNumber2").innerHTML = b;
+    var g = document.getElementById("myNumber7").value;
+    // document.getElementById("myNumber2").innerHTML = b;
+    var h = document.getElementById("myNumber8").value;
+    // document.getElementById("myNumber2").innerHTML = b;
+    var sum = ((parseInt(a)*5) + (parseInt(b)*9) + (parseInt(c)*10) + (parseInt(d)*20) + (parseInt(e)*5) + (parseInt(f)*15) + (parseInt(g)*7.5))*(1-parseFloat(h));
+    document.getElementById("demo").innerHTML = sum.toFixed(2);
+}
+function washFunction(){
+	var a = document.getElementById("myNumber1").value;
+    // document.getElementById("myNumber1").innerHTML = a;
+	var b = document.getElementById("myNumber2").value;
+    // document.getElementById("myNumber2").innerHTML = b;
+    var wash = (parseInt(a)*5) + (parseInt(b)*9);
+    document.getElementById("wash").innerHTML = wash;
+}
+function clipFunction(){
+	var c = document.getElementById("myNumber3").value;
+    // document.getElementById("myNumber1").innerHTML = a;
+	var d = document.getElementById("myNumber4").value;
+    // document.getElementById("myNumber2").innerHTML = b;
+    var e = document.getElementById("myNumber5").value;
+    // document.getElementById("myNumber1").innerHTML = a;
+	var f = document.getElementById("myNumber6").value;
+    // document.getElementById("myNumber2").innerHTML = b;
+    var g = document.getElementById("myNumber7").value;
+    // document.getElementById("myNumber2").innerHTML = b;
+    var clip = (parseInt(c)*10) + (parseInt(d)*20) + (parseInt(e)*5) + (parseInt(f)*15) + (parseInt(g)*7.5);
+    document.getElementById("clip").innerHTML = clip;
+}
+</script>
+</html>
+    <!-- Bootstrap -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   
