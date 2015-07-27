@@ -1,1 +1,41 @@
 /*styles.css*/
+
+
+body {
+	 background: url("../images/salon_lighting.jpg") no-repeat center center fixed;
+    -webkit- background-size: cover;
+	-moz- background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+ }
+
+ 
+ #contact
+ 	{font-family: "Verdana", Verdana, sans-serif;
+ 	font-size: 60px;
+ 	color:#3627C1; 
+ 		width: 1100px;
+  background: ;
+  border: 2px solid black;
+  padding-left: 100px;
+  margin:40px;
+
+ 
+ 
+ }
+
+ .how{	
+ 	margin-top: 150px;
+ 	margin-left: 30px;
+ 	font-size:25px ;
+ 	background-color: #F2ECC8 (0,0,0.5);	
+ 	font-color: black;
+ 	width: 550px;
+ 	}
+
+
+footer{	
+	font-size: 15px;
+	margin-top: 150px
+	}
